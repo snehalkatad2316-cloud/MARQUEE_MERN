@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Intro to CSS</title>
+    <style>
+        /* Universal */
+        *ul{
+            color: white;
+        }
+        ul{
+            color: blue;
+        }
+
+        /* class Selector : .classname */
+        .formating{
+            background-color:  bisque;
+            font-family: cursive;
+            color: rgb(32, 119, 119);
+        }
+        /* ID Selector : #id */
+        #heading{
+            color:blueviolet;
+        }
+        h3,
+        p{
+            font-family: 
+            'Lucida Sans','Lucida Sans Regular',;
+        }
+
+        /*Descendent Selector: */
+        ul li{
+            color:black
+        }
+        section > p{
+            color:brown;
+        }
+        div >p{
+            color: blue;
+        }
+        input[type="password"]{
+            background-color: rgb(206, 12, 12);
+        }
+
+            input[type="text"]{
+            background-color:blue (25, 24, 24);
+        }
+        h2[class]{
+            color: rgb(95, 3, 3);
+        }
+
+        /*Pseudo Classes: */
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3 id="heading">Types of CSS</h3>
+    <p class="formating">
+        Lorem ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.  </p>
+    <ul >
+        <li class="formating">Inline CSS</li>
+        <li class="formating">Internal CSS</li>
+        <li class="formating">External CSS</li>
+    </ul>
+    <a href="https://www.w3schools.com/css/default.asp">Click here</a>
+
+    <section><div>
+        <p>Lorem ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.</p>
+    <p>Lorem 21</p>
+
+    <form action="">
+        <label for="name">Username: </label>
+        <input
+        type="text",
+        id="Username",
+        name="user name",
+        value="",
+        placeholder="Enter your name.">
+        
+        <br><br>
+        <label for="name">Password: </label>
+        <input
+        type="password",
+        id="Password",
+        name="password",
+        value="",
+        placeholder="Enter your password.">
+        <br>
+        <br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
