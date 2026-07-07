@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Intro to CSS</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Yuyu&display=swap');
+
+        
+
+        /* Universal */
+        *ul{
+            color: white;
+        }
+        ul{
+            color: blue;
+        }
+
+        /* class Selector : .classname */
+        .formating{
+            background-color:  bisque;
+            font-family: cursive;
+            color: rgb(32, 119, 119);
+        }
+        /* ID Selector : #id */
+        #heading{
+            color:blueviolet;
+        }
+        h3,
+        p{
+         font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+            
+        }
+
+        /*Descendent Selector: */
+        ul li{
+            color:black
+        }
+        section > p{
+            color:brown;
+        }
+        div >p{
+            color: blue;
+        }
+        input[type="password"]{
+            background-color: rgb(206, 12, 12);
+        }
+
+            input[type="text"]{
+            background-color:blue (25, 24, 24);
+        }
+        h2[class]{
+            width:"300";
+            height:"200";
+            background-color: rgb(228, 228, 76);
+            color: rgb(95, 3, 3);
+            margin: 20px;
+            padding: 20px 10px;
+        }
+        h2{
+            width:"300";
+            height:"200";
+            background-color: rgb(228, 228, 76);
+            color: rgb(95, 3, 3);
+            margin: 20px;
+            padding: 20px 10px;}
+
+        /*Pseudo Classes: */
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: brown;">Heading Level</h2>
+    <h3 id="heading">Types of CSS</h3>
+    <p class="formating">
+        Lorem ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.  </p>
+    <ul >
+        <li class="formating">Inline CSS</li>
+        <li class="formating">Internal CSS</li>
+        <li class="formating">External CSS</li>
+    </ul>
+    <a href="https://www.w3schools.com/css/default.asp">Click here</a>
+
+    <section>
+        <div>
+        <p>Lorem ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.</p>
+    </div>
+    <p>Lorem <a href="https://www.w3schools.com/css/default.asp";
+        >
+        Click here
+    </a>ipsum dolor sit amet consecteture adipisicing elit. Consecteture adipisicing elit.</p>
+    <p>Lorem 21</p>
+
+    <form action="">
+        <label for="name">Username: </label>
+        <input
+        type="text",
+        id="Username",
+        name="user name",
+        value="",
+        placeholder="Enter your name.">
+        
+        <br><br>
+        <label for="name">Password: </label>
+        <input
+        type="password",
+        id="Password",
+        name="password",
+        value="",
+        placeholder="Enter your password.">
+        <br>
+        <br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

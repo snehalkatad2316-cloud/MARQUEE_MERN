@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>Document</title>-->
+
+    <Style>
+span{
+     width:"500";
+            height:"400";
+            background-color: whitesmoke;
+            color: rgb(21, 3, 3);
+            margin: 10px;
+            padding: 20px 10px;
+        border:10px solid  #0b0706;
+}
+        h2{
+            width:"500";
+            height:"400";
+            background-color: rgb(247, 132, 114);
+            color: rgb(21, 3, 3);
+            margin: 10px;
+            padding: 20px 10px;
+        border:10px solid  #0b0706;
+    }
+
+        div >p{
+            color: rgb(14, 14, 23);
+            height:"50";
+            width:"100";
+            background-color: rgb(98, 188, 200);
+            margin-left: 10px;
+            padding: 20px 10px;
+            border: 10px solid #0b0706;
+        }
+        ul li{
+            color:red;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        p{
+             width:"300";
+            height:"200";
+            background-color: rgb(0, 170, 255);
+            color: rgb(22, 5, 5);
+            margin: 20px;
+            padding: 20px 10px;
+            border: 10px solid black;
+        }
+
+    </Style>
+</head>
+<body>
+    <h2 style="color:#0b0706 ;">Box Model</h2>
+    
+    <section>
+        <div>
+           <p>Every element on the page has its own box. Which can be stayled using CSS.</p> 
+        </div>
+
+        <div>
+           <p>From the inside out:</p> 
+        </div>
+
+        <ul>
+            <li class="highlight">content</li><br>
+            <li class="formating">padding</li><br>
+            <li class="highlight">border</li><br>
+            <li class="formating">margin</li>
+        </ul>
+
+        <label><h3><b>Background</b></h3></label>
+        <p>keep in mind that <span class="small-box">background</span> will cover the content and the padding.</p>
+
+    </section>
+</body>
+</html>
