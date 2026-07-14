@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .header {
+      .section {
+        width: 90%;
+        margin: 60px auto;
       }
 
       .box {
@@ -12,17 +14,54 @@
         min-height: 100px;
         background: white;
         border-radius: 10px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
         padding: 30px;
         position: relative;
         overflow: hidden;
+        display: flex;
+        gap: 20px;
       }
 
       .box h2 {
         text-align: center;
-        color: #203a8b;
+        color: rgb(77, 67, 67);
         font-size: 22px;
         margin-top: 10px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .section h1 {
+        text-align: center;
+        color: rgb(9, 58, 122);
+      }
+      .logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 0 5px 15px black;
+        min-width: 70px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+      }
+      .logo img {
+        object-fit: cover;
+        width: 35px;
+        height: 35px;
+      }
+      .box:hover .heading h2 {
+        color: red;
+      }
+      .box:hover .logo {
+        background-color: red;
+      }
+      .box:hover .logo img {
+        filter: brightness(0) invert(1);
       }
     </style>
   </head>
@@ -36,7 +75,7 @@
               src="https://cdn-icons-png.flaticon.com/128/3281/3281188.png"
             />
           </div>
-          <div>
+          <div class="heading">
             <h2>Mannual Testing</h2>
             <p class="para">
               Comprehensive manual testing to ensure your software functions as
@@ -51,7 +90,7 @@
               src=" https://cdn-icons-png.flaticon.com/128/12465/12465756.png"
             />
           </div>
-          <div>
+          <div class="heading">
             <h2>Mobile Tseting</h2>
             <p class="para">
               Ensures seamless mobile experiences across different devices.
@@ -65,7 +104,7 @@
               src=" https://cdn-icons-png.flaticon.com/128/10435/10435274.png"
             />
           </div>
-          <div>
+          <div class="heading">
             <h2>Performance Testing</h2>
             <p class="para">
               Evaluating software performance under different conditions.
@@ -79,7 +118,7 @@
               src=" https://cdn-icons-png.flaticon.com/128/16490/16490070.png"
             />
           </div>
-          <div>
+          <div class="heading">
             <h2>Compatibility Testing</h2>
             <p class="para">
               Ensuring your software works across different platforms.
@@ -93,7 +132,7 @@
               src=" https://cdn-icons-png.flaticon.com/128/18573/18573685.png"
             />
           </div>
-          <div>
+          <div class="heading">
             <h2>Automated Testing</h2>
             <p class="para">
               Efficient automated testing solutions to save time and resources.
@@ -103,9 +142,11 @@
 
         <div class="box">
           <div class="logo">
-            <img src="" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/7827/7827955.png"
+            />
           </div>
-          <div>
+          <div class="heading">
             <h2>Security Testing</h2>
             <p class="para">
               Protecting your software from vulnerabilities and threats.
@@ -115,9 +156,11 @@
 
         <div class="box">
           <div class="logo">
-            <img src="" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2008/2008723.png"
+            />
           </div>
-          <div>
+          <div class="heading">
             <h2>Accesibility Testing</h2>
             <p class="para">Making your software accessible to all users.</p>
           </div>
@@ -125,9 +168,11 @@
 
         <div class="box">
           <div class="logo">
-            <img src="" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4180/4180014.png"
+            />
           </div>
-          <div>
+          <div class="heading">
             <h2>API Testing</h2>
             <p class="para">Deliver seamless, high-quality API experiences.</p>
           </div>
@@ -135,9 +180,11 @@
 
         <div class="box">
           <div class="logo">
-            <img src="" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/16912/16912261.png"
+            />
           </div>
-          <div>
+          <div class="heading">
             <h2>Usability Testing</h2>
             <p class="para">Ensuring your software meets user expectations.</p>
           </div>
@@ -145,9 +192,11 @@
 
         <div class="box">
           <div class="logo">
-            <img src="" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2210/2210317.png"
+            />
           </div>
-          <div>
+          <div class="heading">
             <h2>Visual Testing</h2>
             <p class="para">Verifying the visual correctness of interfaces.</p>
           </div>
