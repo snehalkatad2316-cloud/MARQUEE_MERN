@@ -1,0 +1,178 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  /* Header */
+
+  header {
+    width: 100%;
+    padding: 20px 60px;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-div {
+    display: flex;
+    gap: 20px;
+  }
+
+  .left-div button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+  }
+
+  .flipkart-btn {
+    background: #ffd91c;
+  }
+
+  .travel-btn {
+    background: #ececec;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .location a {
+    color: #2874f0;
+    text-decoration: none;
+  }
+
+  /* Bottom */
+
+  .header-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+  }
+
+  .search {
+    width: 75%;
+
+    border: 2px solid #2874f0;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 12px 20px;
+  }
+
+  .search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    margin-left: 15px;
+
+    font-size: 20px;
+  }
+
+  .menu {
+    display: flex;
+
+    gap: 35px;
+
+    align-items: center;
+
+    font-size: 20px;
+  }
+
+  .login,
+  .more,
+  .cart {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+  }
+</style>
+<header>
+  <!-- Row 1 -->
+  <div class="header-top">
+    <div class="left-div">
+      <button class="flipkart-btn">
+        <img src="logo.png" />
+        <span>Flipkart</span>
+      </button>
+
+      <button class="travel-btn">
+        <img src="travel.png" />
+        <span>Travel</span>
+      </button>
+    </div>
+
+    <div class="location">
+      <i class="fa-solid fa-location-dot"></i>
+
+      <span>
+        <b>Location not set</b>
+        <a href="#">Select delivery location</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+
+  <div class="header-bottom">
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <input type="text" placeholder="Search for Products, Brands And More" />
+    </div>
+
+    <div class="menu">
+      <div class="login">
+        <i class="fa-regular fa-circle-user"></i>
+        Login
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <div class="more">
+        More
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+    </div>
+  </div>
+</header>

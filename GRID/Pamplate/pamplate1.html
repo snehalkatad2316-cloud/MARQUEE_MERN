@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #container {
+        width: 900px;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 250px 250px;
+        gap: 20px;
+      }
+
+      .items {
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        padding: 25px;
+      }
+
+      .items h3 {
+        font-size: 32px;
+        color: #222;
+        margin-bottom: 12px;
+      }
+
+      .items p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+        width: 65%;
+      }
+
+      .headpara {
+        position: relative;
+        z-index: 2;
+      }
+
+      .items img {
+        /* position: absolute; */
+        object-fit: contain;
+      }
+
+      #item-1 {
+        display: flex;
+        flex-direction: column;
+        background: #b7a6d9;
+        grid-row: 1 / span 2;
+        justify-content: space-between;
+
+        overflow: visible;
+        position: relative;
+      }
+
+      #item-1 img {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        /* transform: translate(-50%, -50%); */
+      }
+      #item-1 .img1 {
+        position: absolute;
+        bottom: 300px;
+        left: -60px;
+      }
+
+      #item-1 p {
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        width: 75%;
+      }
+
+      #item-2 {
+        background: #f56ea2;
+        grid-column: 2 / span 2;
+        overflow: visible;
+      }
+
+      #item-2 img {
+        width: 350px;
+        right: 30px;
+        top: -40px;
+        overflow: visible;
+        position: absolute;
+      }
+
+      #item-2 .headpara {
+        width: 45%;
+      }
+
+      #item-3 {
+        background: #c9da8c;
+      }
+
+      #item-3 img {
+        width: 150px;
+        right: 20px;
+        top: 5px;
+        position: absolute;
+      }
+
+      #item-4 {
+        background: #ffe06b;
+        position: relative;
+      }
+
+      #item-4 img {
+        width: 250px;
+        right: 20px;
+        bottom: -35px;
+        position: absolute;
+      }
+      #item-4 h3 {
+        position: absolute;
+        top: -70px;
+        left: -5px;
+      }
+
+      #item-5 {
+        background: #ffb88b;
+        grid-column: 1 / span 2;
+      }
+
+      #item-5 img {
+        width: 280px;
+        right: 15px;
+        bottom: 10px;
+        position: absolute;
+      }
+
+      #item-6 {
+        background: #cfeaf5;
+      }
+
+      #item-6 img {
+        width: 150px;
+        right: 15px;
+        bottom: 0;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="items" id="item-1">
+        <h3>Customization</h3>
+        <img src="Image/Frame 26.png" />
+        <div class="img1"><img src="Image/Frame 17.png" /></div>
+        <div>
+          <!-- <h3>Customization</h3> -->
+
+          <p>
+            USe a pre-designed template or personalize with video, stickers,
+            fonts, and more.
+          </p>
+        </div>
+      </div>
+      <div class="items" id="item-2">
+        <img src="Image/ChatGPT Image Jul 27, 2026, 01_01_14 PM.png" />
+        <div class="headpara">
+          <h3>Scheduling</h3>
+          <p>
+            Schedule all your cards and gifts now and we'll send them later.
+          </p>
+        </div>
+      </div>
+      <div class="items" id="item-3">
+        <!-- <h3>Wallet</h3> -->
+        <img src="Image/Frame 35.png" />
+        <div class="headpara">
+          <h3>Wallet</h3>
+          <p>Save up your Giving Cash.</p>
+        </div>
+      </div>
+
+      <div class="items" id="item-4">
+        <img src="Image/ChatGPT Image Jul 27, 2026, 01_29_21 PM.png" />
+        <div class="headpara">
+          <h3>Inbox</h3>
+          <p>Track your gifts, group chats, and sent cards</p>
+        </div>
+      </div>
+      <div class="items" id="item-5">
+        <!-- <h3>Send Gifts</h3> -->
+        <img src="Image/Frame 52 (1).png" />
+        <div class="headpara">
+          <h3>Send Gifts</h3>
+          <p>Send as a group with friends or individually</p>
+        </div>
+      </div>
+      <div class="items" id="item-6">
+        <img src="Image/ChatGPT Image Jul 27, 2026, 01_16_12 PM.png" />
+        <div>
+          <h3>Reminders</h3>
+          <p>Never miss a birthday again</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

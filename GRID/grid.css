@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#grid-container {
+  display: grid;
+  gap: 1rem; 
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  column-gap: 20px;
+  /* padding: 30px; */
+  border: 10px solid rgb(139, 84, 84);
+  height: 100%;
+
+  /* align-items: start; */
+  /* justify-items: start; */
+   place-items: start center;
+}
+
+
+.grid-items {
+  background-color:aqua;
+  /* width: 200px;
+  height: 100px; */
+}

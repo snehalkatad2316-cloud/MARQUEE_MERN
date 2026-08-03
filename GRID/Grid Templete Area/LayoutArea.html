@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 600px 600px;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:
+          "header header header"
+          "sidebar content1 content1"
+          "sidebar content2 content3"
+          "footer footer footer";
+      }
+      #navbar {
+        grid-area: header;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+        background-color: rgb(231, 86, 33);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #content1 {
+        grid-area: content1;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #content2 {
+        grid-area: content2;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #content3 {
+        grid-area: content3;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #footer {
+        grid-area: footer;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar"><h2>HEADER</h2></div>
+      <div id="sidebar"><h2>SIDEBAR</h2></div>
+      <div id="content1"><h2>CONTENT 1</h2></div>
+      <div id="content2"><h2>CONTENT 2</h2></div>
+      <div id="content3"><h2>CONTENT 3</h2></div>
+      <div id="footer"><h2>FOOTER</h2></div>
+    </div>
+  </body>
+</html>
